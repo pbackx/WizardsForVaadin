@@ -158,7 +158,7 @@ public class Wizard extends CustomComponent implements
         });
         finishButton.setEnabled(false);
 
-        cancelButton = new Button("Help Afsluiten");
+        cancelButton = new Button("Sluiten");
         cancelButton.addClickListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
                 cancel();
