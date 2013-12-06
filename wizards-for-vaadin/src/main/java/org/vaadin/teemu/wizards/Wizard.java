@@ -120,10 +120,10 @@ public class Wizard extends CustomComponent implements
 
         footer = new HorizontalLayout();
         footer.setSpacing(true);
-        footer.addComponent(cancelButton);
         footer.addComponent(backButton);
         footer.addComponent(nextButton);
-        footer.addComponent(finishButton);
+        footer.addComponent(cancelButton);
+//        footer.addComponent(finishButton);
 
         mainLayout.addComponent(contentPanel);
         mainLayout.addComponent(footer);
@@ -136,21 +136,21 @@ public class Wizard extends CustomComponent implements
     }
 
     private void initControlButtons() {
-        nextButton = new Button("Next");
+        nextButton = new Button("Volgende");
         nextButton.addClickListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
                 next();
             }
         });
 
-        backButton = new Button("Back");
+        backButton = new Button("Vorige");
         backButton.addClickListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
                 back();
             }
         });
 
-        finishButton = new Button("Finish");
+        finishButton = new Button("Afsluiten");
         finishButton.addClickListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
                 finish();
@@ -158,7 +158,7 @@ public class Wizard extends CustomComponent implements
         });
         finishButton.setEnabled(false);
 
-        cancelButton = new Button("Cancel");
+        cancelButton = new Button("Help Afsluiten");
         cancelButton.addClickListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
                 cancel();
