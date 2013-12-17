@@ -35,6 +35,7 @@ public class WizardProgressBar extends CustomComponent implements
         stepCaptions.setWidth("100%");
         progressBar.setWidth("100%");
         progressBar.setHeight("13px");
+        progressBar.setPollingInterval(180000);
 
         VerticalLayout layout = new VerticalLayout();
         layout.setWidth("100%");
